@@ -13,54 +13,8 @@ sap.ui.define([
 
 		onInit: function () {
 
-			var vv = [
-				{
-				  "ProductName": "Pineapple",
-				  "Quantity": 21,
-				  "ExtendedPrice": 87.2,
-				  "ShipperName": "Fun Inc.",
-				  "ShippedDate": "2015-04-01T00:00:00",
-				  "Status": "A"
-				},
-				{
-				  "ProductName": "Milk",
-				  "Quantity": 4,
-				  "ExtendedPrice": 10,
-				  "ShipperName": "ACME",
-				  "ShippedDate": "2015-02-18T00:00:00",
-				  "Status": "B"
-				},
-				{
-				  "ProductName": "Canned Beans",
-				  "Quantity": 3,
-				  "ExtendedPrice": 6.85,
-				  "ShipperName": "ACME",
-				  "ShippedDate": "2015-03-02T00:00:00",
-				  "Status": "B"
-				},
-				{
-				  "ProductName": "Salad",
-				  "Quantity": 2,
-				  "ExtendedPrice": 8.8,
-				  "ShipperName": "ACME",
-				  "ShippedDate": "2015-04-12T00:00:00",
-				  "Status": "C"
-				},
-				{
-				  "ProductName": "Bread",
-				  "Quantity": 1,
-				  "ExtendedPrice": 2.71,
-				  "ShipperName": "Fun Inc.",
-				  "ShippedDate": "2015-01-27T00:00:00",
-				  "Status": "A"
-				}
-			  ]
-			  
-
-			
-
 			var oViewModel = new JSONModel({
-				currency: vv
+				currency: "EUR"
 			});
 			this.getView().setModel(oViewModel, "view");
 		},
